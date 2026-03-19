@@ -1,0 +1,33 @@
+/* .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slick-slide > div {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-track .slick-slide {
+  height: inherit !important;
+} */
+
+/* Force react-slick slides to shrink properly */
+.slick-slide {
+  width: auto !important;
+}
+
+/* Remove the extra blank space slick adds */
+.slick-track {
+  display: flex !important;
+  gap: 2px; /* adjust gap between cards */
+}
+
+/* Prevent cloned slides from causing overflow */
+.slick-slide.slick-cloned {
+  width: auto !important;
+}
